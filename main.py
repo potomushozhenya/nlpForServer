@@ -10,7 +10,7 @@ from sklearn.datasets import fetch_20newsgroups
 categories = ['rec.autos', 'comp.graphics', 'sci.space']
 newsgroup = fetch_20newsgroups(subset='all', categories=categories, shuffle=True,
                                remove=('headers', 'footers', 'quotes'))
-device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+device = torch.device("cuda:0")
 print(device)
 
 
